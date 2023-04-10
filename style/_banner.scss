@@ -1,0 +1,55 @@
+.navBanner {
+  height: 750px;
+  background-image: url(../image/banner1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.7s;
+  .bg-linear {
+    height: 100%;
+    background: linear-gradient(0deg, $bgmain, rgb(0, 0, 0, 0.8), transparent);
+    .backdrop {
+      backdrop-filter: blur(10px);
+      width: 100vw;
+      height: 100%;
+      nav {
+        margin-top: ($heightHeaer);
+        width: 40%;
+        a {
+          text-decoration: none;
+          color: $colorText;
+        }
+      }
+      .banner {
+        width: 100%;
+        height: 75%;
+        position: relative;
+        i {
+          position: absolute;
+          top: 50%;
+          left: -1.5rem;
+          transform: translateY(-50%);
+          font-size: 3rem;
+          color: $bgProduct;
+        }
+        .sildeView {
+          transition: 0.7s;
+        }
+        .SlideNext {
+          right: -1.5rem;
+          left: unset;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

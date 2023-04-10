@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.buttonCustom {
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #2081e2;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+header {
+  width: 100vw;
+  height: 62px;
+  background-color: transparent;
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+header .head {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+header .head i {
+  font-size: 1.2rem;
+}
+header .head #Logo {
+  height: 100%;
+}
+header .head #Logo img {
+  height: 80%;
+}
+header .head .search {
+  width: 100%;
+  height: 2.6rem;
+  align-items: center;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: text;
+  position: relative;
+}
+header .head .search:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+header .head .search i {
+  color: #a1a2a2;
+  padding: 0 10px;
+}
+header .head .search input {
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+}
+header .head .search input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+header .head .search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+header .head .connect {
+  height: 2.6rem;
+  width: 14rem;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+header .head .connect .wallet {
+  width: 100%;
+}
+header .head .connect .wallet:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+header .head .connect .user {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  width: 3.6rem;
+}
+header .head .connect .user:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+header .head .cart {
+  height: 2.6rem;
+  width: 2.6rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .head .cart:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navBanner {
+  height: 750px;
+  background-image: url(../image/banner1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.7s;
+}
+.navBanner .bg-linear {
+  height: 100%;
+  background: linear-gradient(0deg, #202225, rgba(0, 0, 0, 0.8), transparent);
+}
+.navBanner .bg-linear .backdrop {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100%;
+}
+.navBanner .bg-linear .backdrop nav {
+  margin-top: 62px;
+  width: 40%;
+}
+.navBanner .bg-linear .backdrop nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.navBanner .bg-linear .backdrop .banner {
+  width: 100%;
+  height: 75%;
+  position: relative;
+}
+.navBanner .bg-linear .backdrop .banner i {
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #303339;
+}
+.navBanner .bg-linear .backdrop .banner .sildeView {
+  transition: 0.7s;
+}
+.navBanner .bg-linear .backdrop .banner .SlideNext {
+  right: -1.5rem;
+  left: unset;
+}
+.navBanner .bg-linear .backdrop .banner img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.5s;
+}
+.navBanner .bg-linear .backdrop .banner img:hover {
+  transform: scale(1.2);
+}
+
+main {
+  background-color: #202225;
+  color: #fff;
+}
+main .price {
+  width: 45%;
+}
+main .productTrending .image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+main .productTrending .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .Product {
+  height: 400px;
+}
+main .Product .image {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+main .Product .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer {
+  width: 100%;
+  color: #fff;
+  background-color: #04111d;
+}
+footer input {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
+  border: 1px solid #858f99;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 12px;
+  flex: 1;
+  transition: 0.3s;
+}
+footer input::-moz-placeholder {
+  color: #858f99;
+}
+footer input::placeholder {
+  color: #858f99;
+}
+footer input:hover {
+  border: 1px solid #fff;
+}
+footer .contect-icon i {
+  padding: 1rem;
+  background-color: #353840;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+footer .contect-icon i:hover {
+  background-color: #2081e2;
+}
+footer .content {
+  border-top: 1px solid rgb(140, 140, 140);
+  border-bottom: 1px solid rgb(140, 140, 140);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar,
+.galleryUser-inner-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.galleryUser-inner-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ffa400, #00aefd);
+  border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track,
+.galleryUser-inner-list::-webkit-scrollbar-track {
+  background-color: gray;
+}

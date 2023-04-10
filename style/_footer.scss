@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  color: $colorText;
+  background-color: $bgfooter;
+  input {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid $borderColor;
+    outline: none;
+    background-color: transparent;
+    color: $colorText;
+    border-radius: 12px;
+    flex: 1;
+    transition: 0.3s;
+  }
+  input::placeholder {
+    color: #858f99;
+  }
+  input:hover {
+    border: 1px solid #fff;
+  }
+  .contect-icon {
+    i {
+      padding: 1rem;
+      background-color: #353840;
+      color: $colorText;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      margin-right: 20px;
+    }
+    i:hover {
+      background-color: $colorBlue;
+    }
+  }
+  .content {
+    border-top: 1px solid rgb(140, 140, 140);
+    border-bottom: 1px solid rgb(140, 140, 140);
+  }
+}

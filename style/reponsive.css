@@ -1,0 +1,14 @@
+/* bootstrap: none(mobile) md(table) xl(pc) */
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .navBanner {
+    height: 500px;
+  }
+}
+/* mobile */
+@media (max-width: 739px) {
+  .navBanner {
+    height: 400px;
+  }
+}
