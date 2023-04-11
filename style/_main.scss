@@ -1,3 +1,60 @@
+.main-select {
+  color: $colorText;
+  &-left {
+    color: #828a91;
+    .select-leftactive {
+      color: $colorText;
+      position: relative;
+    }
+  }
+  &-right {
+    height: 2.6rem;
+
+    &-time {
+      background-color: gray;
+      border-radius: 12px;
+      overflow: hidden;
+      .time-button {
+        width: 3rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #202225;
+        color: #7f878e;
+      }
+      .time-buttonactive {
+        background-color: #353840;
+        color: $colorText;
+        cursor: default;
+      }
+      .time-button:hover {
+        background-color: gray;
+        color: $colorText;
+      }
+    }
+    &-chains {
+      border-radius: 12px;
+      border: 1px solid black;
+      background-color: #202225;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .main-select-right-chains:hover,
+    .main-select-right-view:hover {
+      border: $colorText 1px solid;
+    }
+    .main-select-right-chains:hover i {
+      color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  .main-select-view {
+    @extend .main-select-right-chains;
+    padding: 0 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
 main {
   background-color: $bgmain;
   color: $colorText;
@@ -5,15 +62,11 @@ main {
     width: 45%;
   }
   .productTrending {
-    .image {
-      width: 100px;
-      height: 100px;
-      overflow: hidden;
-      img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
+    img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 12px;
+      margin: 0 20px;
     }
   }
   .Product {

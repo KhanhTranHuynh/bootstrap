@@ -100,7 +100,7 @@ header .head .cart:hover {
 }
 
 .navBanner {
-  height: 750px;
+  height: 700px;
   background-image: url(../image/banner1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -129,6 +129,7 @@ header .head .cart:hover {
   width: 100%;
   height: 75%;
   position: relative;
+  background-color: red;
 }
 .navBanner .bg-linear .backdrop .banner i {
   position: absolute;
@@ -158,6 +159,61 @@ header .head .cart:hover {
   transform: scale(1.2);
 }
 
+.main-select {
+  color: #fff;
+}
+.main-select-left {
+  color: #828a91;
+}
+.main-select-left .select-leftactive {
+  color: #fff;
+  position: relative;
+}
+.main-select-right {
+  height: 2.6rem;
+}
+.main-select-right-time {
+  background-color: gray;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.main-select-right-time .time-button {
+  width: 3rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202225;
+  color: #7f878e;
+}
+.main-select-right-time .time-buttonactive {
+  background-color: #353840;
+  color: #fff;
+  cursor: default;
+}
+.main-select-right-time .time-button:hover {
+  background-color: gray;
+  color: #fff;
+}
+.main-select-right-chains, .main-select .main-select-view {
+  border-radius: 12px;
+  border: 1px solid black;
+  background-color: #202225;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main-select-right .main-select-right-chains:hover, .main-select-right .main-select .main-select-view:hover, .main-select .main-select-right .main-select-view:hover,
+.main-select-right .main-select-right-view:hover {
+  border: #fff 1px solid;
+}
+.main-select-right .main-select-right-chains:hover i, .main-select-right .main-select .main-select-view:hover i, .main-select .main-select-right .main-select-view:hover i {
+  color: rgba(255, 255, 255, 0.2);
+}
+.main-select .main-select-view {
+  padding: 0 1.6rem;
+  line-height: 2.6rem;
+}
+
 main {
   background-color: #202225;
   color: #fff;
@@ -165,17 +221,11 @@ main {
 main .price {
   width: 45%;
 }
-main .productTrending .image {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-}
-main .productTrending .image img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+main .productTrending img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 12px;
+  margin: 0 20px;
 }
 main .Product {
   height: 400px;
